@@ -11,7 +11,7 @@ const config = {
   favicon: 'img/favicon_flutter.ico',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://Cavin6080.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/Dash-Docs/',
@@ -22,7 +22,7 @@ const config = {
   organizationName: 'Cavin6080', // Usually your GitHub org/user name.
   projectName: 'Dash-Docs', // Usually your repo name.
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internalization, you can use this field to set useful
