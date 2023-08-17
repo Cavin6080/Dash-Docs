@@ -95,8 +95,8 @@ you the `List<HomeModel>`.
 
 :::caution
 This `IHomeRepository` is marked as `abstract` and `interface`, meaning we should override 
-all the methods of the base class. And no one should be able to make an instance of
-an abstract class. [Reference](https://dart.dev/language/class-modifiers)
+all the methods of the base class. So that no instance can be created of `IHomeRepository` class.
+[Reference](https://dart.dev/language/class-modifiers)
 :::
 
 - Now, let's divide the steps that you've to perform in the API integration 🔗, so that you can understand
@@ -514,3 +514,6 @@ Here're some references that you can look up to know more about these things:
 - `fpdart` : [Integration of API's using `fpdart`](https://www.sandromaglione.com/techblog/real_example_fpdart_open_meteo_api_part_2)
 - `auto_route`: [Blog series of `AutoRoute` by Cavin](https://medium.com/@CavinMac/list/auto-route-in-flutter-105bbe608e12)
 - `bloc`: [`BLoC`'s official documentation website](https://bloclibrary.dev/#/gettingstarted)
+
+<Zapp id="flutter" />
+
