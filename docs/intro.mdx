@@ -89,10 +89,10 @@ You should be knowing most of the things about these packages in order to move f
 
 To create a new project using the **Boilerplate**, follow the steps below:
 
-- Clone the **Github Repository** of the Boilerplate by running the command below:
+1. Clone the **Github Repository** of the Boilerplate by running the command below:
 
 ```bash
-git clone https://github.com/Cavin6080/bloc_boilerplate.git
+git clone https://github.com/cavin-7span/bloc_boilerplate.git
 ```
 :::warning
 This repository is private as of now so in case of any issue. You can reach out to 
@@ -101,7 +101,22 @@ This repository is private as of now so in case of any issue. You can reach out 
 
 You can type this command into **Command Prompt**, **Powershell**, **Terminal**, or any other **integrated terminal** of your code editor.
 
-- Run the below command to install all necessary dependencies you need to run your project:
+2. After you clone the repository, you'll have to setup the environment variables. To setup that, you can follow this [link](https://cavin-7span.github.io/Dash-Docs/docs/tutorial-basics/configuring-environment-variables) for the complete tutorial on this.
+
+3. After that, create new folders in the **assets** folders if any of this does not exists in this:
+  - images
+  - l10n
+  - icons
+  - fonts
+
+
+4. Run the below command to configure the code generation files:
+
+```bash
+dart run build_runner build
+```
+
+5. At last, run this command to get all the packages:
 
 ```bash
 flutter pub get

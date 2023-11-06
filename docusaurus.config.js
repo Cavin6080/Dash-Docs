@@ -81,7 +81,7 @@ const config = {
           },
           { to: '/blog', label: 'Blog', position: 'left' },
           {
-            href: 'https://github.com/Cavin6080/bloc_boilerplate',
+            href: 'https://github.com/cavin-7span/bloc_boilerplate',
             label: 'GitHub',
             position: 'right',
           },
