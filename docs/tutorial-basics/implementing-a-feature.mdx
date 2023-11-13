@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 description: Learn the API integration process of the boilerplate.
 ---
 
@@ -429,10 +429,7 @@ file, because we want to scope our `BLoCs` and `Cubits` to it's respective modul
 
 Let's look at the example for it: 
 
-<Tabs>
-  <TabItem value="StatefulWidget" label="StatefulWidget" default>
-
-```dart jsx title="lib/modules/home/screen/home_screen.dart" {2,6-13,14}
+ ```java jsx title="lib/modules/home/screen/home_screen.dart" 
 
   class HomeScreen extends StatefulWidget implements AutoRouteWrapper {
   const HomeScreen({super.key});
@@ -462,37 +459,6 @@ class _HomeScreenState extends State<HomeScreen> {
     }
 }
 ```
-  </TabItem>
-  <TabItem value="StatelessWidget" label="StatelessWidget">
-
-```java jsx title="lib/modules/home/screen/home_screen.dart" {2,6-13,14}
-
-  class HomeScreen extends StatelessWidget implements AutoRouteWrapper {
-  const HomeScreen({super.key});
-
-  @override
-  Widget wrappedRoute(BuildContext context) {
-    return RepositoryProvider<HomeRepository>(
-      create: (context) => HomeRepository(),
-      child: BlocProvider(
-        lazy: false,
-        create: (context) => HomeBloc(
-          repository: RepositoryProvider.of<HomeRepository>(context),
-        )..add(const HomeGetPostEvent()),
-        child: this,
-      ),
-    );
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(...)
-    }
-}
-```
-  </TabItem>
-</Tabs>
-
 
 - Here, we're using `AutoRouteWrapper` which is provided by [`AutoRoute`](https://pub.dev/packages/auto_route) 
 package.
@@ -514,6 +480,4 @@ Here're some references that you can look up to know more about these things:
 - `fpdart` : [Integration of API's using `fpdart`](https://www.sandromaglione.com/techblog/real_example_fpdart_open_meteo_api_part_2)
 - `auto_route`: [Blog series of `AutoRoute` by Cavin](https://medium.com/@CavinMac/list/auto-route-in-flutter-105bbe608e12)
 - `bloc`: [`BLoC`'s official documentation website](https://bloclibrary.dev/#/gettingstarted)
-
-<Zapp id="flutter" />
 

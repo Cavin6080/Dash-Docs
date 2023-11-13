@@ -19,13 +19,19 @@ To configure environment variables inside your Flutter project, Follow the steps
 2. Now, Add this 2 variables inside both env files like this:
 
 ```env jsx title=".env.dev"
-      BASE_API_URL=YOUR API URL
-      ENV=Development
+BASE_API_URL=YOUR API URL
+ENV=Development
 ```
 
 :::caution
 ENV key for `.env.dev` will be **Development** but it will be **Production** for `.env.prod`
 :::
+
+:::warning
+Don't commit your .env file to a (public/private) repository.
+:::
+
+
 
 3. Now run the Flutter Build Runner command in order to generate your encrypted environment variables.
 
@@ -66,3 +72,14 @@ dart run build_runner build
 ```
 
 4. The last step is to create the **getters** for the variable. You can look into the implementation of other getter variables inside the `app_config.dart` file in order to implement it.
+
+## 3. Bonus 💙
+
+If you ever have to render a widget based on the environment, then you can do it like this:
+
+```java jsx title="app-screen.dart"
+/// Here you can take any env, for this demo we're taking `development`
+if (AppConfig.environment==Env.development) {
+    ....
+  }
+```
