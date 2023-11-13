@@ -11,7 +11,7 @@ const config = {
   favicon: 'img/favicon_flutter.ico',
 
   // Set the production url of your site here
-  url: 'https://Cavin6080.github.io',
+  url: 'https://cavin-7span.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/Dash-Docs/',
@@ -19,7 +19,7 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'Cavin6080', // Usually your GitHub org/user name.
+  organizationName: 'cavin-7span', // Usually your GitHub org/user name.
   projectName: 'Dash-Docs', // Usually your repo name.
 
   onBrokenLinks: 'warn',
