@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkboilerplate_docs=self.webpackChunkboilerplate_docs||[]).push([[1124],{6115:e=>{e.exports=JSON.parse('{"permalink":"/Dash-Docs/blog/tags/hello","page":1,"postsPerPage":10,"totalPages":1,"totalCount":2,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
